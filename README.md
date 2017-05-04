@@ -1,6 +1,6 @@
 # vue-router
 
-> A Vue.js 路由及动画
+>路由及动画演示Demo:https://webhj.github.io/vueRouterDemo
 
 ## Build Setup
 
