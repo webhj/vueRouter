@@ -1,6 +1,6 @@
 # vue-router
 
->路由及动画演示Demo：https://webhj.github.io/vueRouterDemo
+>Vue2路由及动画演示Demo：https://webhj.github.io/vueRouterDemo
 
 ## Build Setup
 
