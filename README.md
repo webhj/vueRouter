@@ -1,6 +1,6 @@
 # vue-project
 
-> A Vue.js project
+> A Vue.js 路由及动画
 
 ## Build Setup
 
