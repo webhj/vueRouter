@@ -11,6 +11,7 @@ Vue.use(Router);
 
 export default new Router({
   mode:'history', //不带#号
+  scrollBehavior: () => ({ y: 0 }), //指定到到垂直滚动条位置
   routes: [
     {
       path: '/',
@@ -48,9 +49,7 @@ export default new Router({
 
       //路由配置文件钩子函数
       beforeEnter: (to, from, next) => {
-        console.log('我进入了路由传参params模板');
-        console.log(to);
-        console.log(from);
+        console.log('/url传参params模板','to',to.path,'from',from.path);
         next();
       }
     },

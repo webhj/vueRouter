@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navs @toBack="toBack" @toHome="toHome"></navs>
+    <navs @toBack="toBack" @toHome="toHome" class='nav'></navs>
     <transition enterActiveClass="animated fadeInLeft" leaveActiveClass="animated fadeOutRight" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -54,7 +54,7 @@
 </script>
 
 <style>
-  html, body { padding: 0; margin: 0; overflow: hidden; }
+  html, body { padding: 0; margin: 0; overflow-x: hidden;overflow-y: auto; }
 
   ul { list-style: none }
 
@@ -64,9 +64,9 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    padding-top: 168px;
   }
-
+  .nav{position: fixed;top: 20px;left: 50%;-webkit-transform:  translate3d(-50%,0,0);}
   .router-link-exact-active { color: #ff0000; font-size: 16px; }
 
   .left { float: left; width: 50%; background-color: #c36; color: #fff; }
